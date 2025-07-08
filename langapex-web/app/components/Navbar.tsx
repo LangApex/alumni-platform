@@ -35,10 +35,11 @@ export function Navbar() {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-6">
-            <NavLink href="/events">Events</NavLink>
+              <NavLink href="/events">Events</NavLink>
               <NavLink href="/alumni">Alumni</NavLink>
               <NavLink href="/gallery">Gallery</NavLink>
               <NavLink href="/workshop">Workshop</NavLink>
+              <NavLink href='/moderation'>Guidelines</NavLink>
             </div>
 
             {/* Mobile Menu Button */}
@@ -79,6 +80,7 @@ export function Navbar() {
           <NavLink href="/events" >Events</NavLink>
           <NavLink href="/gallery" >Gallery</NavLink>
           <NavLink href="/workshop" >Workshop</NavLink>
+          <NavLink href='/moderation'>Guidelines</NavLink>
         </nav>
       </div>
     </>
