@@ -80,6 +80,7 @@ export function Navbar() {
           <NavLink href="/events" >Events</NavLink>
           <NavLink href="/gallery" >Gallery</NavLink>
           <NavLink href="/workshop" >Workshop</NavLink>
+          <NavLink href='/moderation'>Guidelines</NavLink>
         </nav>
       </div>
     </>
