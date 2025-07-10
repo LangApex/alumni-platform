@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CompanyCarousel } from "./components/CompanyCarousel";
 import { UniversityCarousel } from "./components/UniversityCarousel";
 import { FaTelegram, FaYoutube, FaInstagram } from "react-icons/fa";
+import Globe from "./components/Globe";
 
 export default function Home() {
   return (
@@ -73,6 +74,9 @@ export default function Home() {
 
       {/* Company Carousel */}
       <CompanyCarousel />
+
+      {/* Globe */}
+      <Globe />
 
       {/* CTA Section */}
       <div className="text-center mt-16">
