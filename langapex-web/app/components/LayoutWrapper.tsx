@@ -1,3 +1,6 @@
+'use client';
+
+import { usePathname } from 'next/navigation';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
@@ -7,14 +10,17 @@ interface LayoutWrapperProps {
 }
 
 export function LayoutWrapper({ children }: LayoutWrapperProps) {
+  const pathname = usePathname();
+  const isAdminRoute = pathname?.startsWith('/admin');
+
   return (
     <>
       <GoogleAnalytics gaId="G-1XEF2LHZ47" />
-      <Navbar />
-      <main className="pt-16">
+      {!isAdminRoute && <Navbar />}
+      <main className={isAdminRoute ? '' : 'pt-16'}>
         {children}
       </main>
-      <Footer />
+      {!isAdminRoute && <Footer />}
     </>
   );
 }

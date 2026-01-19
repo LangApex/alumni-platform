@@ -1,4 +1,4 @@
-export default function AdminLayout({
+export default function EventsLayout({
   children,
 }: {
   children: React.ReactNode;
