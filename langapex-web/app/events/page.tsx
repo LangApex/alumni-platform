@@ -55,10 +55,8 @@ export default function EventsPage() {
         </p>
       </div>
 
-      {/* Upcoming Events */}
       <UpcomingEvents events={upcomingEvents} />
 
-      {/* Past Events */}
       <PastEvents events={pastEvents} />
     </div>
   );
