@@ -45,8 +45,7 @@ const pastEvents: Event[] = [
 export default function EventsPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      {/* Hero Section */}
-      <div className="text-center mb-16">
+''      <div className="text-center mb-16">
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-4">
           Alumni Events
         </h1>
