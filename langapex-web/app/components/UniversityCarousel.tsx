@@ -48,6 +48,16 @@ const universities = [
     name: 'Tufts University',
     logo: '/images/universities/tufts.jpg',
     url: 'https://www.tufts.edu'
+  },
+  {
+    name: 'Sejong University',
+    logo: '/images/universities/sejong.jpg',
+    url: 'https://www.sejong.ac.kr'
+  },
+  {
+    name: 'INHA University in Tashkent',
+    logo: '/images/universities/inha.svg',
+    url: 'https://inha.uz'
   }
 ];
 

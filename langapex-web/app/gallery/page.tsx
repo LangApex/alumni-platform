@@ -31,6 +31,11 @@ const images = [
     comment: "2020, Spelling Bee",
     img: "/images/galleryWall/gallery-img5.jpg",
   },
+  {
+    date: "2024",
+    comment: "Lang Apex, Dombit",
+    img: "/images/galleryWall/gallery-img6.jpeg",
+  }
 ];
 
 const GalleryWall = () => {
@@ -67,12 +72,12 @@ const GalleryWall = () => {
         ))}
       </div>
         
-      <div className="mt-[150px]">
+      <div className="mt-[150px] pb-[50px]">
         <h2 className="text-center text-[28px] font-semibold ">Got some pictures? Share with us         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSczEhrtWwjvx67qv_UP0NLfQcItm7WsSsUugukgc15wBPHDuA/viewform?usp=dialog"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-[#0088cc] hover:bg-[#0077b3] gap-2 align-middle"
+          className="inline-flex items-center justify-center px-4 py-1 border border-transparent text-sm font-medium rounded-md text-white bg-[#0088cc] hover:bg-[#0077b3] gap-2 align-middle"
         >
           Here
         </a>

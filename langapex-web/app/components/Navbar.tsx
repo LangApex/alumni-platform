@@ -27,18 +27,25 @@ export function Navbar() {
   return (
     <>
       <nav className="bg-white/90 backdrop-blur-sm fixed w-full z-20 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <Link href="/" className="flex items-center">
-              <span className="text-xl font-semibold">LangApex</span>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 p-1">
+          <div className="flex justify-between items-center h-16 p-1">
+            <Link href="/" className="flex flex-col items-center">
+              <Image
+                src="/Logo.png"
+                alt="LangApex Logo"
+                width={64}
+                height={64}
+              />
+              <span className="text-xl font-serif">Alumni</span>
             </Link>
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-6">
-            <NavLink href="/events">Events</NavLink>
+              <NavLink href="/events">Events</NavLink>
               <NavLink href="/alumni">Alumni</NavLink>
               <NavLink href="/gallery">Gallery</NavLink>
               <NavLink href="/workshop">Workshop</NavLink>
+              <NavLink href='/moderation'>Guidelines</NavLink>
             </div>
 
             {/* Mobile Menu Button */}
@@ -64,9 +71,8 @@ export function Navbar() {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-white z-40 transform transition-transform duration-300 ease-in-out ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+        className={`fixed top-0 right-0 h-full w-64 bg-white z-40 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
       >
         <div className="flex items-center justify-between p-4 border-b">
           <span className="text-lg font-semibold">Menu</span>
@@ -79,6 +85,7 @@ export function Navbar() {
           <NavLink href="/events" >Events</NavLink>
           <NavLink href="/gallery" >Gallery</NavLink>
           <NavLink href="/workshop" >Workshop</NavLink>
+          <NavLink href='/moderation'>Guidelines</NavLink>
         </nav>
       </div>
     </>
