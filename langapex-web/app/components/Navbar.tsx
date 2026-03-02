@@ -43,6 +43,7 @@ export function Navbar() {
             <div className="hidden md:flex items-center space-x-6">
               <NavLink href="/events">Events</NavLink>
               <NavLink href="/alumni">Alumni</NavLink>
+              <NavLink href="/network-globe">Network</NavLink>
               <NavLink href="/gallery">Gallery</NavLink>
               <NavLink href="/workshop">Workshop</NavLink>
               <NavLink href='/moderation'>Guidelines</NavLink>
@@ -83,6 +84,7 @@ export function Navbar() {
         <nav className="flex flex-col p-4 space-y-4">
           <NavLink href="/alumni" >Alumni</NavLink>
           <NavLink href="/events" >Events</NavLink>
+          <NavLink href="/network-globe" >Network</NavLink>
           <NavLink href="/gallery" >Gallery</NavLink>
           <NavLink href="/workshop" >Workshop</NavLink>
           <NavLink href='/moderation'>Guidelines</NavLink>
